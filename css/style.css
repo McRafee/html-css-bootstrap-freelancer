@@ -1,14 +1,23 @@
+/* Navbar */
 #nav-top {
     background-color: #2c3e50;
     font-weight: 900;
     padding-top: 25px;
     padding-bottom: 25px;
-
+    border-bottom: 0;
 }
 
-#nav-top a {
+#nav-top a,
+a#brand:hover,
+#nav-top button,
+#nav-top .fa-bars {
     color: white;
-    text-transform: uppercase;
+}
+
+#nav-top button {
+    background-color:#1abc9c;
+    border-radius: 10px;
+    border-color: #1abc9c;
 }
 
 #nav-top a:hover {
@@ -21,19 +30,16 @@
 
 }
 
-a#brand:hover {
-    color: white;
-}
-
 .navbar-right {
     font-size: 17px;
     padding-right: 50px;
 }
-
+/* End of Navbar */
+/* Header */
 header {
     background-color: #1abc9c;
-    padding-top: 100px;
-    padding-bottom: 60px;
+    padding-top: 150px;
+    padding-bottom: 80px;
 }
 
 h1 {
@@ -41,10 +47,16 @@ h1 {
     font-weight: 900;
     font-size: 65px;
 }
-#avatar {
-    width: 250px;
-}
 
+header p {
+    font-size: 25px;
+    color: white;
+}
+#avatar {
+    max-width: 250px;
+}
+/* End of Header */
+/* Custom divider */
 .divider-custom {
     margin: 1.25rem 0 1.5rem;
     width: 100%;
@@ -76,8 +88,65 @@ h1 {
     padding-left: 15px;
     padding-right: 15px;
 }
+/*End of Custom divider */
+/* Portfolio */
+#portfolio {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 
-p {
-    font-size: 25px;
+#portfolio h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #2c3e50;
+}
+
+#portfolio .fa-star {
+    color: #2c3e50;
+}
+
+#portfolio .title {
+    padding-bottom: 25px;
+}
+
+.portfolio-item {
+    cursor: pointer;
+    position: relative;
+    max-width: 350px;
+    margin-bottom: 30px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.portfolio-item .portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    background-color:
+    rgba(26,188,156,.9);
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.portfolio-item-caption-content {
     color: white;
+}
+
+.portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+}
+
+.portfolio-item-caption-content i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }

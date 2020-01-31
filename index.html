@@ -10,36 +10,32 @@
 
     </head>
     <body>
-        <!-- Nav -->
-        <nav id="nav-top" class="navbar-expand-lg text-uppercase fixed-top">
-            <div class="container">
-                <div class="row">
-                    <a id="brand" class="navbar-brand" href="#">Start Bootstrap</a> <!-- Nav -->
-                    <div class="nav-right">
-                        <ul class="nav navbar-nav navbar-right"> <!-- Nav -->
-                            <li>
-                                <a href="#Portfolio">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#Contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <nav id="nav-top" class="navbar navbar-default navbar-fixed-top"> <!-- Bootstrap 3.4 - Standard Navbar -->
+          <div class="container text-uppercase"> <!-- Standard container -NO FLUID- -->
+            <div class="navbar-header"> <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                MENU
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fas fa-bars"></i>
+                </button>
             </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- Collect the nav links, forms, and other content for toggling -->
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
         </nav>
-        <!-- Header -->
-        <header>
+        <header> <!-- Header -->
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-8 col-md-offset-2">
+                    <div class="col-xs-12">
                         <img id="avatar" class="img-responsive center-block" src="img/avataaars.svg" alt="Avatar">
                         <h1 class="text-uppercase text-center">Start Bootstrap</h1>
-                        <!-- Icon Divider -->
-                        <div class="divider-custom divider-light">
+                        <div class="divider-custom divider-light"> <!-- Icon Divider -->
                             <div class="divider-custom-line"></div>
                             <div class="divider-custom-icon">
                               <i class="fas fa-star"></i>
@@ -47,11 +43,94 @@
                             <div class="divider-custom-line"></div>
                         </div>
                         <p class="text-center">Graphic Artist - Web Designer - Illustrator</p>
-
                     </div>
                 </div>
             </div>
-        </header>
+        </header> <!-- End of Header -->
+        <section id="portfolio">
+            <div class="container">
+                <div class="row title">
+                    <div class="col-xs-12">
+                        <h2 class="text-uppercase text-center">Portfolio</h2>
+                        <div class="divider-custom"> <!-- Icon Divider -->
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon">
+                              <i class="fas fa-star"></i>
+                            </div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item center-block"> <!-- Item 1 -->
+                            <div class="portfolio-item-caption h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                        <img class="img-responsive " src="img/cabin.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item center-block"> <!-- Item 2 -->
+                            <div class="portfolio-item-caption h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                        <img class="img-responsive " src="img/cake.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item center-block"> <!-- Item 3 -->
+                            <div class="portfolio-item-caption h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                        <img class="img-responsive " src="img/circus.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item center-block"> <!-- Item 4 -->
+                            <div class="portfolio-item-caption h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                        <img class="img-responsive " src="img/game.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item center-block"> <!-- Item 5 -->
+                            <div class="portfolio-item-caption h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                        <img class="img-responsive " src="img/safe.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item center-block"> <!-- Item 6 -->
+                            <div class="portfolio-item-caption h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                        <img class="img-responsive " src="img/submarine.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
 
     </body>
 </html>
