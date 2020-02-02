@@ -244,15 +244,16 @@ header p {
 a#btn-social-1,
 a#btn-social-2,
 a#btn-social-3,
-a#btn-social-4{
+a#btn-social-4 {
     color: white;
     font-size: 20px;
     border: 2px solid #fff;
-    padding: 5px;
+    padding: 12px;
     width: 30px;
     height: 30px;
     border-radius: 100%;
 }
+
 a#btn-social-1:hover,
 a#btn-social-2:hover,
 a#btn-social-3:hover,
